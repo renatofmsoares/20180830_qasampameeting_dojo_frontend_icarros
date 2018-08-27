@@ -14,19 +14,19 @@ Gems usadas no projeto:
 - chromedriver
 
 Baixar o projeto do Github:
-git clone https://github.com/qasampameeting/dojo_frontend.git
+- git clone https://github.com/qasampameeting/dojo_frontend.git
 
-Instalação das gems
-gem install bundler - Instalar o gerenciador de dependências
-bundle install - instalar as dependências do Gemfile
+Instalação das gems:
+- gem install bundler - Instalar o gerenciador de dependências
+- bundle install - instalar as dependências do Gemfile
 
-Instalação do Chrome Driver
-http://chromedriver.chromium.org/ - Fazer o download da versão adequada para o seu S.O.
-Descompactar o arquivo baixado na sua máquina e adicionar o chromedriver as suas váriaveis de ambiente
+Instalação do Chrome Driver:
+- http://chromedriver.chromium.org/ - Fazer o download da versão adequada para o seu S.O.
+- Descompactar o arquivo baixado na sua máquina e adicionar o chromedriver as suas váriaveis de ambiente
 
-Executando o projeto
-Acessar a pasta https://github.com/qasampameeting/dojo_frontend.git
-Via terminar rodar o comando 'cucumber'
+Executando o projeto:
+- Acessar a pasta https://github.com/qasampameeting/dojo_frontend.git
+- Via terminar rodar o comando 'cucumber'
 
 
 
