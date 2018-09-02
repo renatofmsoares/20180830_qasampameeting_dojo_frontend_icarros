@@ -1,4 +1,4 @@
-#Login1
+#Login1 - sem Prism com capybara
 Dado("que eu acesso a pagina de Login") do
   visit('http://newtours.demoaut.com/mercurywelcome.php')
   click_link 'SIGN-ON'
@@ -30,7 +30,7 @@ Quando("eu incluo o usuário válido {string} e senha inválida {string}") do |u
   find('input[name="login"]').click
 end
 
-#Login2
+#Login2 - sem Prism sem capybara
 Quando("eu incluo o usuário e senha") do |table|
   login = table.rows_hash
   find('input[name="userName"]').set login[:usuario]
@@ -62,16 +62,16 @@ Então("permaneco na pagina login") do |table|
   expect(page).to have_content(resultado[:autenticacao])
 end
 
-#Login3
+#Login3 - com Prism
 Dado("que eu logo na pagina") do
-  @inicial_page = InicialPage.new
-  @inicial_page.load
-  @inicial_page.clicar_signon
+  @initial_page = InitialPage.new
+  @initial_page.load
+  @initial_page.clickSignonButton
 end
 
-Quando("eu incluo meu {string} e {string}") do |usuario, senha|
+Quando("eu incluo meu {string} e {string}") do |userName, password|
   @login_page = LoginPage.new
-  @login_page.logar(usuario, senha)
+  @login_page.login(userName, password)
 end
 
 Entao("devo visualizar a {string}") do |autenticacao|

@@ -4,9 +4,9 @@ class LoginPage < SitePrism::Page
     element :campo_senha, 'input[name*="password"]'
     element :botao_entrar, 'input[name*="login"]'
 
-    def logar(usuario, senha)
-        campo_login.set usuario
-        campo_senha.set senha
+    def login(userName, password)
+        campo_login.set userName
+        campo_senha.set password
         botao_entrar.click
     end
 

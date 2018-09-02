@@ -5,11 +5,11 @@ require 'site_prism'
 require 'capybara/cucumber'
 require 'pry'
 
-Capybara.register_driver :chrome do |app|
-	Capybara::Selenium::Driver.new(app, :browser => :chrome)
+Capybara.register_driver :firefox do |app|
+	Capybara::Selenium::Driver.new(app, :browser => :firefox)
 end
 
 Capybara.configure do |config|
-	config.default_driver = :chrome
+	config.default_driver = :firefox
 	config.app_host = 'http://newtours.demoaut.com'
 end

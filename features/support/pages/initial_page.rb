@@ -1,8 +1,9 @@
-class InicialPage < SitePrism::Page
+class InitialPage < SitePrism::Page
     set_url ''
     element :btn_signon, 'a[href*="mercurysignon.php"]'
 
-    def clicar_signon
+    def clickSignonButton
         btn_signon.click
     end
+    
 end
