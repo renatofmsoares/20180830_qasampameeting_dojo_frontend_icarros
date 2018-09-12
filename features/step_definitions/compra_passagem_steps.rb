@@ -13,9 +13,9 @@ Dado("escolho o voo") do
     @select_flight_page.clickContinueButton
 end
 
-Dado("preencho as informacoes do usuario") do
+Dado("preencho as informacoes do usuario {string}") do |name|
     @book_a_flight_page = BookAFlightPage.new
-    @book_a_flight_page.setPassangerInformations("Renato", "Soares")
+    @book_a_flight_page.setPassangerInformations(name, "Soares")
     @book_a_flight_page.setCreditCardInformation("11111111111")
     @book_a_flight_page.clickSecurePurchaseButton
 

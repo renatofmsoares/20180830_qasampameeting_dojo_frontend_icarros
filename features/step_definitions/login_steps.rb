@@ -66,7 +66,7 @@ end
 Dado("que eu logo na pagina") do
   @initial_page = InitialPage.new
   @initial_page.load
-  @initial_page.clickSignonButton
+  #@initial_page.clickSignonButton
 end
 
 Quando("eu incluo meu {string} e {string}") do |userName, password|
